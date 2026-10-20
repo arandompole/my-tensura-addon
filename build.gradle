@@ -116,13 +116,6 @@ configurations {
 }
 
 dependencies {
-    implementation "curse.maven:tensura-neoforge-643695:8793360"
-    implementation "curse.maven:architectury-419699:8492726"
-    implementation "curse.maven:geckolib-neoforge-388172:8893490"
-    implementation "curse.maven:manascore-neoforge-619025:8022425"
-    implementation "curse.maven:SmartBrainLib-neoforge-661293:7055149"
-    implementation "curse.maven:tensura_neb-neoforge-1230585:8022509"
-    implementation "curse.maven:TerraBlender-neoforge-940057:6054947"
     // Example optional mod dependency with JEI
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"
@@ -183,8 +176,9 @@ publishing {
         }
     }
     repositories {
-        maven {
-            url "https://cursemaven.com"
+        // Adds the 'libs' folder in the project directory as a flat directory
+        flatDir {
+            dir 'libs'
         }
     }
 }
