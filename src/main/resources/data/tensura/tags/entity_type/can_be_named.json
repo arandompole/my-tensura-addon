@@ -9,8 +9,20 @@
     "tensura:folgen",
     "tensura:shizu",
     "tensura:supermassive_slime",
-    "tensura_neb:carrion",
-    "tensura_neb:luminous_valentine",
-    "tensura_neb:rimuru_ogre_fight"
+
+    {
+      "id": "tensura_neb:carrion",
+      "required": false
+    },
+
+    {
+      "id": "tensura_neb:luminous_valentine",
+      "required": false
+    },
+
+    {
+      "id": "tensura_neb:rimuru_ogre_fight",
+      "required": false
+    }
   ]
 }
